@@ -1,0 +1,29 @@
+html, body {
+    margin: 0;
+    height: 100%;
+    background-color: #323232;
+    color: antiquewhite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 44px;
+
+}
+
+@keyframes jump {
+    20%{
+        transform: translateY(-10px) rotateY('360deg');
+    }
+}
+
+.jump {
+    animation-name: jump;
+    animation-duration: 2s;
+    
+}
