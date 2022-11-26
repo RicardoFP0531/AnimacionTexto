@@ -18,12 +18,16 @@ h1 {
 
 @keyframes jump {
     20%{
-        transform: translateY(-10px) rotateY('360deg');
+        transform: translateY(-10px) rotateY(360deg);
     }
 }
 
 .jump {
     animation-name: jump;
     animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    display: inline-block;
+    animation-delay: calc(var(--i)*0.1s);
     
 }
